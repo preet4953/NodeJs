@@ -1,0 +1,208 @@
+.navbar {
+  
+  background-color:#333;
+  min-width: 300px;
+}
+.navbar .navbar-brand {
+  color: white;
+  font-size: x-large;
+}
+
+.navbar .navbar-brand img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+ transition: transform .7s ease-in-out;
+}
+.navbar .navbar-brand img:hover{
+  transform: rotate(360deg);
+}
+.navbar .nav-item {
+  margin: 1px;
+}
+.navbar .nav-item .nav-link {
+  color: white;
+  font-size: medium;
+}
+
+.navbar .nav-item .nav-link.active {
+  background-color: #007bff;
+  /* rgb(28, 28, 30, 0.8); */
+  border-radius: 5px;
+}
+
+.navbar .nav-item .nav-link:hover {
+  background-color: #007bff;
+  /* rgb(28, 28, 30, 0.8); */
+  border-radius: 5px;
+  color: white;
+}
+
+/* Here is header of website */
+@keyframes slideup {
+  0% {
+    transform: translatey(40%);
+    opacity: -0;
+  }
+  100% {
+    transform: translatey(-0);
+    opacity: 0.4;
+  }
+}
+
+@keyframes fadein{
+  0%{
+    opacity: -0;
+  }
+  100%{
+    opacity: 0.4;
+  }
+}
+
+.header {
+  /* text-align: end; */
+  padding: 20%;
+  display: flex;
+  animation: 2s ease-out 1s fadein;
+  /* position: relative; */
+  /* background: #1abc9c; */
+  /* background-image: url(https://i.pinimg.com/originals/45/ec/80/45ec802c8a35ae258dd633d225105506.jpg); */
+  background-image: url(https://images.unsplash.com/photo-1585076641399-5c06d1b3365f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80);
+  /* background-image: url(https://images.unsplash.com/photo-1546900703-cf06143d1239?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1891&q=80); */
+  background-position: center;
+  opacity: 0.4;
+  background-size: cover;
+  margin-bottom: 50px;
+  justify-content: center;
+  width: 100%;
+
+}
+.header h1 {
+  color: white;
+  font-size: 5vw;
+  animation: 2s ease-out 1s slideup;
+  background-color: rgba(47, 53, 59, 0.8);
+ 
+  
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(35, 43, 43);
+}
+
+/* <--About Page --> */
+
+.outer-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  align-content: center;
+  justify-content: center;
+}
+
+.outer-container .card {
+  background-color: #161618;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  justify-content: space-evenly;
+  
+  padding: 50px;
+  width: fit-content;
+  border-radius: 20px;
+}
+
+/* Projects page */
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  padding: 20px;
+}
+
+.project-container .outside-project-card {
+  max-width: 1000px;
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: #161618;
+  border-radius: 20px;
+}
+
+.project-container .outside-project-card .card {
+  width: 200px;
+  margin: 10px;
+  background-color: #212121;
+  color: #818181;
+}
+.project-container .outside-project-card .card .card-body {
+  color: whitesmoke;
+}
+
+.project-container .outside-project-card .card .card-body .card-text {
+  color: #818181;
+}
+
+/* Contact page */
+
+.contact-details-container {
+  display: flex;
+  padding: 30px;
+}
+
+.contact-details-container .container {
+  background-color: #161618;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+.contact-details-container .container .form-container {
+  background-color: black;
+  border-radius: 20px;
+  width: 500px;
+  padding: 20px;
+}
+
+/* Footer starts here */
+footer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  padding: 10px;
+  background-color: #333;
+  /* color: black; */
+  justify-content: center;
+  align-items: center;
+}
+
+.footerItem {
+  text-decoration: none;
+  
+  padding: 10px;
+}
+.footerItem img {
+  border-radius: 10px;
+  width: 80px;
+  padding: 5px;
+  transition: transform .7s ease-in-out;
+}
+.footerItem img:hover {
+  background-color: #007bbf;
+  transform: scale(1.5);
+  /* background-image: url(https://img.icons8.com/ios/50/000000/twitter-circled--v1.png); */
+}
+
+a.footerItem:hover {
+  text-decoration: none;
+
+  width: 10px;
+}
